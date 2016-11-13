@@ -777,6 +777,7 @@
 				TargetAttributes = {
 					4E4BB56E1BB410240043C80C = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = JQNK74493B;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
@@ -1182,6 +1183,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1190,10 +1192,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ELColorGame/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.ELColorGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.matchcolor.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ELColorGame/Supporting Files/ELColorGame-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1202,7 +1205,8 @@
 			baseConfigurationReference = C135F0B163D5251C9BB87299 /* Pods-ELColorGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1211,10 +1215,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ELColorGame/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.ELColorGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.matchcolor.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ELColorGame/Supporting Files/ELColorGame-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
