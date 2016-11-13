@@ -43,12 +43,23 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference>
+         <TestableReference
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4E4BB5821BB410240043C80C"
                BuildableName = "ELColorGameTests.xctest"
                BlueprintName = "ELColorGameTests"
+               ReferencedContainer = "container:ELColorGame.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4E4BB58D1BB410240043C80C"
+               BuildableName = "ELColorGameUITests.xctest"
+               BlueprintName = "ELColorGameUITests"
                ReferencedContainer = "container:ELColorGame.xcodeproj">
             </BuildableReference>
          </TestableReference>
