@@ -32,7 +32,7 @@ class StartView: UIView {
         addSubview(logoImageView)
         addSubview(newGameButton)
         addSubview(rankingButton)
-        addSubview(infoButton)
+        //addSubview(infoButton)
     }
 
     private let backgroundView: UIView = {
@@ -57,7 +57,7 @@ class StartView: UIView {
 
     private let newGameButton = Button(title: newGame.localized, color: UIColor(color: .Green6BE01A))
     private let rankingButton = Button(title: ranking.localized, color: UIColor(color: .Turquoise54C7C7))
-    private let infoButton = Button(image: UIImage(asset: .Info))
+    //private let infoButton = Button(image: UIImage(asset: .Info))
 
     // MARK: Layout
 
@@ -87,10 +87,10 @@ class StartView: UIView {
             make.height.equalTo(50)
             make.centerX.equalTo(0)
         }
-        infoButton.snp_makeConstraints { (make) -> Void in
-            make.right.equalTo(-15)
-            make.bottom.equalTo(-20)
-        }
+//        infoButton.snp_makeConstraints { (make) -> Void in
+//            make.right.equalTo(-15)
+//            make.bottom.equalTo(-20)
+//        }
     }
 
     private func addGradientForView(view: UIView) {
@@ -113,9 +113,9 @@ class StartView: UIView {
         rankingButton.buttonActionClosure = { [unowned self] in
             self.delegate?.startViewDidTapRanking(self)
         }
-        infoButton.buttonActionClosure = { [unowned self] in
-            self.delegate?.startViewDidTapInfo(self)
-        }
+//        infoButton.buttonActionClosure = { [unowned self] in
+//            self.delegate?.startViewDidTapInfo(self)
+//        }
     }
 
 }
